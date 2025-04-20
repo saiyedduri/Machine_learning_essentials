@@ -1,5 +1,3 @@
-# Compute node: Used for running computational tasks and executing workloads
-# on a cluster
 
 #PBS -N first-example
 #PBS -q teachingq
