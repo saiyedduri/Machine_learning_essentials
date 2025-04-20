@@ -1,0 +1,11 @@
+Job started from /home/sy37tovi/pbs.929983.mmaster02.x8z.
+Changing directory to...
+/home/sy37tovi/parllel_computing/open_mp_example
+Hello from the master thread 0 of 1
+
+     Hello from the forked thread 0 of 4
+     Hello from the forked thread 1 of 4
+     Hello from the forked thread 3 of 4
+     Hello from the forked thread 2 of 4
+
+Hello (again) from the master thread 0 of 1

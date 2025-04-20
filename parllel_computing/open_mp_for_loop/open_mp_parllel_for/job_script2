@@ -1,0 +1,15 @@
+#PBS -N combined_parllel_for_loop
+#PBS -q teachingq
+#PBS -l select=1:ncpus=4:mpiprocs=1
+#PBS -l walltime=00:01:00
+#PBS -o log.out2
+#PBS -e log.err2
+export OMP_NUM_THREADS=4
+
+echo -e "Job started from $(pwd)."
+echo "Changing directory to..."
+PBS_O_WORKDIR=/home/sy37tovi/parllel_computing/open_mp_for_loop/open_mp_parllel_for
+cd $PBS_O_WORKDIR
+echo -e "$(pwd)"
+
+./parellel_for.bin

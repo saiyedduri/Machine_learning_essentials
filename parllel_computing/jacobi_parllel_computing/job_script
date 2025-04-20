@@ -1,0 +1,29 @@
+#PBS -N Jacobi_jobscript
+#PBS -q teachingq
+#PBS -l select=1:ncpus=8:mpiprocs=1
+#PBS -l walltime=00:05:00
+#PBS -o jacobI_scaling.out1
+#PBS -e jacobi_scaling.err1
+echo -e "Performing Strong scaling test"
+
+echo -e "Job started from $(pwd)."
+echo "Changing directory to..."
+PBS_O_WORKDIR=/home/sy37tovi/parllel_computing/jacobi_parllel_computing 
+cd $PBS_O_WORKDIR
+echo -e "$(pwd)"
+
+N=10000
+
+for threads in 1 2 4 8
+do
+	export OMP_NUM_THREADS=$threads
+	echo ""
+	echo "======================="
+	echo "Running with $threads threads"
+	
+	# Capture the runtime and print it in the desired format
+    	runtime=$(/usr/bin/time -f "%e" ./jacobi.bin $N 2>&1)
+
+    	echo "#Threads $threads: $runtime s"
+    	echo "======================="
+done
