@@ -1,4 +1,5 @@
 # HPC Cluster Computing: Parallel Programming Guide
+This repository aims to learn parllel computing/HPC on cluster
 
 ## Table of Contents
 1. [Cluster Basics](#cluster-basics)
