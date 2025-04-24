@@ -1,0 +1,17 @@
+# Compute node: Used for running computational tasks and executing workloads
+# on a cluster
+
+#PBS -N first-example
+#PBS -q teachingq
+#PBS -l select=1:ncpus=1:mpiprocs=1
+#PBS -l walltime=00:01:00
+#PBS -o log.out
+#PBS -e log.err
+
+echo -e "Job started from $(pwd)."
+echo "Changing directory to..."
+PBS_O_WORKDIR=~/parllel_computing/open_mp/change_print_file_on_cluster/
+cd $PBS_O_WORKDIR
+echo -e "$(pwd)"
+
+cat PBS_O_WORKDIR/print_file

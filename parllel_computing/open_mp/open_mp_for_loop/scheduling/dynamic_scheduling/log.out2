@@ -1,0 +1,13 @@
+Job started from /home/sy37tovi/pbs.932943.mmaster02.x8z.
+Changing directory to...
+/home/sy37tovi/parllel_computing/open_mp_for_loop/scheduling/dynamic_scheduling
+Thread 0 does iteration 0
+Thread 0 does iteration 4
+Thread 0 does iteration 5
+Thread 0 does iteration 6
+Thread 0 does iteration 7
+Thread 0 does iteration 8
+Thread 0 does iteration 9
+Thread 3 does iteration 1
+Thread 1 does iteration 3
+Thread 2 does iteration 2
