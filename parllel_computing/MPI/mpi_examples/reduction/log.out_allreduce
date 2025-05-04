@@ -1,0 +1,16 @@
+Job started from /home/sy37tovi/pbs.943754.mmaster02.x8z.
+Changing directory to...
+/home/sy37tovi/parllel_computing2/MPI/mpi_examples/reduction
+Hello world
+rank=0; size=4
+Hello world
+rank=1; size=4
+Hello world
+rank=2; size=4
+Hello world
+rank=3; size=4
+  Received=10
+ Received all reduce=10
+ Received all reduce=10
+ Received all reduce=10
+ Received all reduce=10

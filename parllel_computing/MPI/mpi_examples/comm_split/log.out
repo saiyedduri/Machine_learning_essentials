@@ -1,0 +1,7 @@
+Job started from /home/sy37tovi/pbs.943767.mmaster02.x8z.
+Changing directory to...
+/home/sy37tovi/parllel_computing2/MPI/mpi_examples/comm_split
+World rank 0is not part of subcomm (color==0)
+World rank 1 is in subcomm with rank 0
+World rank 2 is in subcomm with rank 1
+World rank 3 is in subcomm with rank 2

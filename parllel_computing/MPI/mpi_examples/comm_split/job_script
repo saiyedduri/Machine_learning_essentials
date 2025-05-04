@@ -1,0 +1,16 @@
+#PBS -N split_comm
+#PBS -q teachingq
+#PBS -l select=1:ncpus=4:mpiprocs=4
+#PBS -l walltime=00:05:00
+#PBS -o log.out
+#PBS -e log.err
+export OMP_NUM_THREADS=4
+
+echo -e "Job started from $(pwd)."
+echo "Changing directory to..."
+PBS_O_WORKDIR=/home/sy37tovi/parllel_computing2/MPI/mpi_examples/comm_split/
+cd $PBS_O_WORKDIR
+echo -e "$(pwd)"
+
+mpiexec -n 4 python comm_split.py
+

@@ -1,0 +1,13 @@
+Job started from /home/sy37tovi/pbs.943756.mmaster02.x8z.
+Changing directory to...
+/home/sy37tovi/parllel_computing2/MPI/mpi_examples/send_recv
+Hello World!
+rank=0; size=4
+Hello World!
+rank=2; size=4
+Rank 0 still has n=data
+Hello World!
+rank=1; size=4
+Hello World!
+rank=3; size=4
+n=data

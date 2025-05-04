@@ -1,0 +1,15 @@
+#PBS -N reduce_sum
+#PBS -q teachingq
+#PBS -l select=1:ncpus=4:mpiprocs=4
+#PBS -l walltime=00:05:00
+#PBS -o log.out_reduce
+#PBS -e log.err_reduce
+export OMP_NUM_THREADS=4
+
+echo -e "Job started from $(pwd)."
+echo "Changing directory to..."
+PBS_O_WORKDIR=/home/sy37tovi/parllel_computing2/MPI/mpi_examples/reduction
+cd $PBS_O_WORKDIR
+echo -e "$(pwd)"
+
+mpiexec -n 4 python reduce_sum.py

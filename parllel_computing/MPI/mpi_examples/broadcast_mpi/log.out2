@@ -1,0 +1,15 @@
+Job started from /home/sy37tovi/pbs.943672.mmaster02.x8z.
+Changing directory to...
+/home/sy37tovi/parllel_computing2/MPI/mpi_examples/broadcast_mpi
+data before broadcasting to other threads
+received_data=[0, 1, 2, 3],rank=0
+data before broadcasting to other threads
+received_data=None,rank=3
+received_data=[0, 1, 2, 3]; rank=0
+data before broadcasting to other threads
+received_data=None,rank=2
+data before broadcasting to other threads
+received_data=None,rank=1
+received_data=[0, 1, 2, 3]; rank=2
+received_data=[0, 1, 2, 3]; rank=1
+received_data=[0, 1, 2, 3]; rank=3

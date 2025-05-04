@@ -1,0 +1,11 @@
+Job started from /home/sy37tovi/pbs.943590.mmaster02.x8z.
+Changing directory to...
+/home/sy37tovi/parllel_computing2/MPI/mpi_examples/print_rank_size
+Hello World!
+rank=1, size=4
+Hello World!
+rank=2, size=4
+Hello World!
+rank=0, size=4
+Hello World!
+rank=3, size=4

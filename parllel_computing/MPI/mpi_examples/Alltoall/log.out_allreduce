@@ -1,0 +1,19 @@
+Job started from /home/sy37tovi/pbs.943764.mmaster02.x8z.
+Changing directory to...
+/home/sy37tovi/parllel_computing2/MPI/mpi_examples/Alltoall
+Hello world!
+Rank=2 of size=4
+Rank 2; sending:[20, 21, 22, 23]
+Hello world!
+Rank=3 of size=4
+Rank 3; sending:[30, 31, 32, 33]
+Hello world!
+Rank=0 of size=4
+Hello world!
+Rank=1 of size=4
+Rank 0; sending:[0, 1, 2, 3]
+Rank 1; sending:[10, 11, 12, 13]
+Rank 3 received: [3, 13, 23, 33]
+Rank 2 received: [2, 12, 22, 32]
+Rank 1 received: [1, 11, 21, 31]
+Rank 0 received: [0, 10, 20, 30]
