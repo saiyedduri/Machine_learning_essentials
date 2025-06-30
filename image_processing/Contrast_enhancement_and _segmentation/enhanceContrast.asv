@@ -1,0 +1,40 @@
+function ContrastEnhancedImg = enhanceContrast(img,method)
+
+% Ensure that the color values are 0,...,255 double
+img = double(img);  
+if any(img<=1-eps & img>=eps,'all') % Maybe transform from [0,1] to [0,255]
+  img = round(255*img);
+end
+
+if strcmp(method,'contrastStretching')
+
+  kmax = max(img(:));
+  kmin = min(img(:));
+  % TODO: Contrast Stretching
+  X=(img-kmin)/(255/(kmax-kmin))
+  ContrastEnhancedImg=uint8(X) % C
+else
+    error("Unknown enhancement method.")
+
+
+end
+
+if strcmp(method,'histEqualization')
+
+  % absolut Frequencies of color values from A
+  hist = histcounts(img(:),0:256);
+
+  % TODO: hist Equalization
+  
+
+
+  
+    
+end
+
+ContrastEnhancedImg = uint8(X);
+
+end
+
+
+
