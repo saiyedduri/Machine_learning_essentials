@@ -11,5 +11,4 @@ for k=s+1:sz(1)-s
   h = waitbar((k-s)/(sz(1)-2*s));
 end
 close(h);
-
 end
