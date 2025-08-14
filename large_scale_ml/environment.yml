@@ -1,0 +1,28 @@
+name: parcomp
+channels:
+  - conda-forge
+dependencies:
+  - python=3.13
+  - jax>=0.6
+  - flax
+  - optax
+  - jupyterlab
+  - matplotlib
+  - flax
+  - optax
+  - jaxopt
+  - ipywidgets
+  - trame
+  - tqdm
+  - diffrax
+  - scipy
+  - networkx
+  - ipykernel
+  - ipympl
+  - neovim
+  - pip
+  - pip:
+    - torch
+    - nodejs-bin
+    - scikit-learn
+  - torchvision
