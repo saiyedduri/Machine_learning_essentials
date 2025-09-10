@@ -2,7 +2,7 @@
 This repository aims to learn parllel computing/HPC on cluster
 
 ## Table of Contents
-1. [Cluster Basics](#cluster-basics)
+1. [Cluster Basics](#cluster-basics):
    - [Login vs Compute Nodes](#login-vs-compute-nodes)
    - [OpenMP Overview](#openmp-overview)
    - [Job Submission](#job-submission)
