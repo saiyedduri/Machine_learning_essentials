@@ -1,2 +1,2 @@
-This repository will include my learning of mathematical concepts and basics of Machine learning..
+This repository will include my learning of mathematical concepts and basics of Machine learning.
 
